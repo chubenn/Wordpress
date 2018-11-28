@@ -1,0 +1,57 @@
+---
+title: "Rmarkdown to Wordpress"
+author: "Ben Chu"
+date: "November 28, 2018"
+output: html_document
+---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
+
+setwd("C:/Users/Branly Mclanbry/Documents/GitHub/Wordpress")
+library(RWordPress)
+library(knitr)
+
+options(WordpressLogin = c('chubenn' = 'FarsightedFlamingo1'),
+        WordpressURL = 'https://chubenn.blog/xmlrpc.php')
+
+knit2wp("rmd2wp.Rmd", title = "Look at me now, I'm the one posting from Rmarkdown.", action = c("newPost"), publish = FALSE)
+```
+# Introduction
+I wrote this as an additional because I had some trouble initially starting up the Rmarkdown to Wordpress process. Other people have written great guides on the process and I wanted to add some clarifyers. If you are just getting started on the process, check out other's posts.
+
+* Previous Better Posts on the subject
+    + [Heather Urry](http://sites.tufts.edu/emotiononthebrain/2017/08/12/blog-posting-from-r-markdown-to-wordpress/)
+    + [Peter Baumgartner](https://peter.baumgartner.name/2017/08/12/learning-how-to-use-the-rwordpress-package/)
+    + [Yi Hui](https://yihui.name/knitr/demo/wordpress/)
+    + [Mithun Desai](http://tabvizexplorer.com/how-to-upload-r-markdown-directly-to-wordpress/)
+    + [Michael M](https://eipsoftware.com/musings/2018/02/02/r-markdown-to-wordpress/)
+
+## Initial setup
+#### Getting `RWordPress` into my library.
+Downloading from Rstudio's install button had an update issue, no problem. Here's the [link](https://api.github.com/repos/duncantl/RWordPress/zipball/master) for the zip file. You can click your way around the setup fairly easy and get it added to your library.
+
+#### Issues with just copy and pasting other's code^obviously-but-I'm-going-to-reiterate-it
+Initially, I just copy and pasted which resulted in error codes `Error in parse_block(g[-1], g[1], params.src) : duplicate label 'setup'` etc. This error code comes from a duplicated chunk_name/label of the initial setup if you just open a Rmarkdown file. Give it a different name and move on.
+
+## Login information conflicts
+#### Options
+I found that the `WordpressLogin` and `WordpressURL` have different capitalization across the blogs. Lowercase works for me.
+
+#### Username
+Frankly, I know it's obvious but the username that is required is just what you registered with wordpress, not the email. Using `chubenn` worked while `chubenn@gmail.com` does not. 
+
+#### Website Url
+First off, adding `/xmlrpc` to the end of the url is crucial. It's basically a package that serves as a connection between the server and client, acting inbetween Wordpress and `RWordPress`.
+In the same obvious vein as the previous, I had previously copied the wrong URL. All you need is `https://chubenn.blog`.
+NOT `https://wordpress.com/chubenn.blog` or `https://wordpress.com/view/chubenn.blog`. 
+
+#### A last note on editing
+Peter Baumgartner and a few others have detailed lists in using the `editPost` function which requires a `postId` including other post options. This is incredibly strong because you can edit all parts of the post including categories, tags, social media releases, etc.  
+However, I'm finding myself checking back and forth fairly frequently between the Wordpress manager and my Markdown, this is because the markdown view is way different than the wordpress viewer. In order to accomplish that, I currently am just setting the publication to false. `{r publication_code echo = FALSE, eval = FALSE}`.
+
+Mabye I'll write a revision of this post in a few months after becoming more familiar with it.
+
+
+## That's basically all you need to start blogging via Rmarkdown.
+>So long, thanks for all the fish.^Aslo-can-anyone-tell-me-how-to-add-indentation-to-paragraphs-in-Rmarkdown?
