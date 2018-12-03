@@ -50,8 +50,10 @@ NOT `https://wordpress.com/chubenn.blog` or `https://wordpress.com/view/chubenn.
 Peter Baumgartner and a few others have detailed lists in using the `editPost` function which requires a `postId` including other post options. This is incredibly strong because you can edit all parts of the post including categories, tags, social media releases, etc.  
 However, I'm finding myself checking back and forth fairly frequently between the Wordpress manager and my Markdown, this is because the markdown view is way different than the wordpress viewer. In order to accomplish that, I currently am just setting the publication to false. `{r publication_code echo = FALSE, eval = FALSE}`.
 
-Mabye I'll write a revision of this post in a few months after becoming more familiar with it.
+Mabye I'll write a revision of this post in a few months after becoming more familiar with it.[^1] 
 
 
 ## That's basically all you need to start blogging via Rmarkdown.
->So long, thanks for all the fish.^Aslo-can-anyone-tell-me-how-to-add-indentation-to-paragraphs-in-Rmarkdown?
+>So long, thanks for all the fish.^Aslo-can-anyone-tell-me-how-to-add-indentation-to-paragraphs-in-Rmarkdown? 
+
+[^1]: test

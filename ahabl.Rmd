@@ -1,0 +1,54 @@
+---
+title: "Alliaceous halitosis and blue lights"
+author: "Ben Chu"
+date: "November 29, 2018"
+output: html_document
+---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
+
+setwd("C:/Users/Branly Mclanbry/Documents/GitHub/Wordpress")
+library(RWordPress)
+library(knitr)
+
+options(WordpressLogin = c('chubenn' = 'FarsightedFlamingo1'),
+        WordpressURL = 'https://chubenn.blog/xmlrpc.php')
+
+knit2wp("ahabl.Rmd", title = "Alliaceous halitosis and blue lights.", action = c("newPost"), publish = FALSE)
+```
+|Generally, I don't eat in the morning. A small percentage of Americans do not[^1]. Personally, this change happened slowly - as a child I always sat down and crammed whatever my mother made for me. As an adult (living in my parents house), I wake up, turn on all the lights[^2]  in my room, which amount to about five, walk to the kitchen, fill the kettle with water, flip the hot kettle switch, take out a mug, put a teabag in the aforementioned mug and walk back into my room waiting for the water to boil. Routine. Not perfect but sustainable. The amble to my room is filled with mutterings "I hate my life, I can't wait til I die" to "God, I hope I get this job" and even the remote "I'm so lonely." I get into my room, full of the blue lights but lacking the tea. Without giving into confirmation bias (but just a little), my mood begins to lift, I make my bed, I sit down, start my computer, turn on some generic "24/7 lofi-chill beats to study-game-sex to[^3] or some verion of classical music[^4]."
+
+|Those are my mornings. That is, those are usually my mornings. I find deviations - both large and small. Today I hear a knock at the main door, a rap, a joint, something completely out of the ordinary. I look apart from the playlist of songs and walk to the door - open it.
+
+|"Hi?" I ask the man standing only three feet away from my face, though there is a black screen door blocking us. It feels like a proper amount of defense but in reality it's just a cheap screen mesh.
+
+|"Good morning, are you a resident of this house?" He scans me up and down, noticeably so. I imagine that seeing my worn morning clothing and disheveled, vague, disillusioned self might have been a surprise (or not, I think most single, broke, broken, men living at their parents home with no future prospects or desires to change their life - only hoping for life to change them - look like this.)
+
+|"I am, but my parents own it, I'm just living here, if that's what you're getting at." I respond to the man. He's clean shaven, dressed in a not modern but not outdated tie, ironed button-down, with matching black pants, and shoes - maybe a thief, scoping out the neighborhood in a smart but ambiguous way.
+
+|"Oh no, I'm with Cutco[^5] and I'm here to present you with a business opportunity supported by the fine product of high quality all-American knives. Do you have a minute?" he whisks at me.
+
+|"Sure." I respond. Looking back, I wish I could said something suaver, something impressive. Heart-achingly cool. "Sure, I have all the time in the world, that's the only thing I can give." Instead it was just "sure." I realized now that the Cutco business man was just a teenager in an ill-fitting suit that he got from JCPenney's a day or so ago. The suit hadn't had time to relax, to breathe, to start a conversation with his body.
+
+|As soon as I threw my malaised "sure" at the man he started on his script. Pure memory, no flexibility. "My name is . I'm here to discuss with you . These knives are the best in the industry . From four inch tangs to eight . patented anti-microbial handles . lifetime warranty . free sharpening . 'I would like to do a test.'"
+
+|After he suggested a comparison test with one of my personal knives, I noticed that he had a vehicle parked in front of my car. A hand-me-down, silver, Honda Civic, late 2000's, high mileage but lots of care to make sure it lasted. I was intrigued, so I  invited him inside and grabbed one of my own knives[^6],[^7]. He gathered his possession (a large trunk like object), opened it and deftly popped out a table that had a cutting board built in. "Wow" I silently said, the table[^8] was the most impressive thing that I had seen for a few weeks. In a few seconds, he was demonstrating differences in cuts on large things like onion all the way to small garlic bits. How the Cutco knives were supposedly outperforming my knife in multiple ways - tears, slices, chops, smoothness. "These slight differences in performances are why Cutco knives are known throughout the world. Not only that, they last a lifetime because of our 'free' sharpening program."
+
+|Five minutes had passed before I realized that this adolescent salesman just wasn't convinced enough, that even behind his pitches, he had no real investment in this, measly commission for deception. To him a knife cut, but would never cut enough. I realized the feeling his was hiding, that preying on impulsive and entertained humans was a true burden. Stealing dignity away only to have it stolen. I imagine that it would be more comfortable to sneak into these people's houses at night and take what he wanted without them looking rather to their face.
+
+|I ended the conversation. "Look, it's just totally unnecessary for me to buy more knives."
+
+|The boy replied automatically, "But these knives are so much better, their quality is indisputable."  His words now seemed completely obvious, breaking the spirit of intimacy that was created two minutes ago. Inviting his demons into a place where children played and parents fought and cries and joys and pains were felt.
+  
+|I understood his pain all too well and handed him five dollars. "Here's five dollars for your time, I don't need knives but I know what it's like to exist and not be seen. Good luck." The car started off again and parked, not at the next house but three over, I imagine that there is a policy to space out pitches so as not to raise questions. The boiled water had probably been sitting for twenty minutes, but it was still hot enough to make tea. There were cut onions and garlic all over my kitchen, I popped one of the garlic bits in my mouth, brought the mug to my room, started my playlist, and faded into the clouds of the morning. Not much later, I decide that my tea is unbearable insufficient for my mood, I turn the cup over the sink and proceed to make a Sunday Coffee[^9] for myself. I return to my room and feign rest, just like Norman Prices' *Chopin*
+
+[^1]: Ten percentage, as a vague unattributed average. Though, like most statistics - breaking them down provides more information. This ten percent is the lowest with females older than 55. My demographic group, males 18-34 years, accounts of a twenty-eight percent skip in breakfasts.
+[^2]: David Holzman published an article in the Environmental Health Perspectives through the National Institutes of Health titled "What's in Color? The unique Human Health Effects of Blue Light." The premise of this suggested that blue lights mitigate feelings of depression and other maladies of mood. Other articles from the Proceedings of the National Academy of Sciences of the United States of America suggest that blue lights in the morning trigger alertness, memory, mood, regulate circadian rhythm and wakefulness. Lastly, this Buzzfeed^2a^ article has a kitschy segment on blue light - "You wake up because you're more stimulated." The article itself is flaringly intoxicating with its moving pictures and arbitrary use of punctuation, bold, underlining, superscripting, and italics. (2a) I decided that while Buzzfeed is not the best place to start academic, personal, or informative learning engagements, it's more fun than scientific journals, which - in the end - say more about learning than it does clickbait.
+[^3]: I rarely engage in either of the study-game-sex acts with the music, it's just always on. What's the merit of having something specific to a task if you never participate in those tasks?
+[^4]: To be completely honest, I try my hardest to understand classical music, Chopin, Debussy, Vivaldi. However, it is completely obvious that I only listen to it because of the perception of "listening to classical music." It is much more likely that I am insecure than I am englightened.
+[^5]: Cutco is an American cutlery^5a^ company created in 1948 by Wear-Ever Aluminum. The company is known for its distinctive curvy handles, D-shaped serrated blades, and manipulated multi-level-marketing schemes. Friends and family beware, it's not a cult, but operates like one. Personal relationships were the steak and eggs for this company before things like Facebook and THE INTERNET. (5a) The cutlery themselves are somewhere on the spectrum between alright and pretty good. Though it begs the question "What's the upper limit on a knife? I understand the value of a good knife - sure. What is the difference between my knife that cuts really well and costs me 50 dollars versus your knife that cuts really *really* well and costs 150 dollars?"
+[^6]:It was a pretty damn nice knife. Classic eight inch chef's knife. Lightweight, great balance, and D shaped handle. It was molded after the *Shun's Classic* - traditional Japanese knife requiring a proper pinch grip around the handle, or else it would feel unbalanced and slip. Beautifully weighted, 7.3 ounces at 1.18 inches wide. Lastly, the entire knife is delicate in and of itself. Wooden-plastic composite handle required drying after each use. The blade is Damascus-clad which require consistent honing and sharpening with only slicing (vs chopping) motions. I had recently sharpened it before I moved back in with my parents. It was just in my storage tote, sitting and waiting to decimate onions and opinions.
+[^7]: I'm not a chef by any means, I just enjoy cooking. Before I was single and broke and living at my parents house, I had lived with my ex. We spent nights together making meals, prepping food for the next day, and wasting time in the kitchen. Entire evenings spent eating, tasting, listening to "24/7 lofi-chill beats to study-game-sex to" and utilizing the purposes for which the playlist was designed. 
+[^8]: It turns out, he had attached springs to a generic folding table that would automatically open when the tension connection was released. Brilliant. 
+[^9]:  See Sunday Coffee in *Nasty Habits*

@@ -1,0 +1,100 @@
+---
+author: "Ben Chu"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+---
+```{r include = FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
+
+# change echo = TRUE, when you want to start publishing to wordpress
+
+library(RWordPress)
+library(knitr)
+
+options(WordpressLogin = c('chubenn' = 'FarsightedFlamingo1'),
+        WordpressURL = 'https://chubenn.blog/xmlrpc.php')
+
+knit2wp("IntroWordpressTemplate.Rmd", 
+        title = "Intro to creating a Wordpress Template", 
+        action = c("newPost"), 
+        publish = FALSE)
+```
+### Brief Introduction to creating a basic Wordpress Template - Rmarkdown to Wordpress. 
+Recently, I purchased a Wordpress account (4$/month - BIG BALLA) and have been posting both writing and coding through it. It was kinda tedious going through the whole copy and pasting motions for the [publication code](https://chubenn.blog/2018/11/28/look-at-me-now-im-the-one-posting-from-rmarkdown/), so I decided to write my own code to built a basic template and just reuse it. 
+
+* Previous Better Posts/Stacks on the subject.
+     + [Chester Ismay](http://ismayc.github.io/ecots2k16/template_pkg/)
+     + [Sam Firke](https://stackoverflow.com/questions/40403569/rmarkdown-template-in-r-package-fails-when-i-add-create-dir-true)
+     + [Joe and Marius](https://stackoverflow.com/questions/48675911/new-template-from-my-custom-package-is-not-appearing-in-rstudio)
+     
+#### Packages to use and folders
+Start by making sure you have `devtools`, and making sure your working directory is in the right place.
+
+`install.packages("devtools")`
+Working directory is essentially the folder that R saves and operates out of. I usually have mine set to the Github Folders and push my repositories nightly. The `~/` fills in the information for the pathing so you don't have to set the entire `C:/Users/Ben/Documents/Github/Wordpress`.
+`setwd("~/GitHub/Wordpress")`
+
+#### Creating your template/package and skeleton directory
+We are going to create a new package folder using the `create()` from devtools. I reccommend writing into a script because you will be starting over and over.
+
+The name that you will be giving this folder is what you will be installing later. So don't name it anything stupid.
+`devtools::create("WordpressTemplate")`
+
+A fairly special path is going to be used from `dir.create` to specify the nested directories. I wouldn't reccommend deviating from the names but you can in one spot - `report`.
+
+`dir.create("WordpressTemplate/inst/rmarkdown/remplates/report/skeleton", recursive = TRUE)`.
+The `recursive = TRUE` arguement specifies if each individual folder should be created until the last folder. That is to say, everything inbetween `WordpressTemplate` and `Skeleton`
+
+#### Creating the template.
+At this point, open a new markdown like normal. *File -> New File -> Rmarkdown -> Document*. Add and delete as you will, I kept mine fairly simple. I want to mention that a line of code will keep the document updated on the time *r format(Sys.time(), '%d %B, %Y')*
+
+
+
+`author: "Ben Chu"`
+
+`date: "`r format(Sys.time(), '%d %B, %Y')`"`
+
+`output: html_document`
+
+```{r eval = FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
+
+library(RWordPress)
+library(knitr)
+
+options(WordpressLogin = c('chubenn' = 'Password123(This isn't my password)'),
+        WordpressURL = 'https://chubenn.blog/xmlrpc.php')
+
+knit2wp("IntroWordpressTemplate.Rmd", 
+        title = "Intro to creating a Wordpress Template", 
+        action = c("newPost"), 
+        publish = FALSE)
+```
+
+Save `IntrowordpressTemplate.Rmd` in the `skeleton` folder.
+
+#### Creating template.yaml
+A `.yaml` file is basically a data serialization lanauge for configuration. For these purposes, it provides information to the title/details/directory creation.
+Let's make a new one *File -> New File -> -> Text File. 
+
+
+name: Wordpress Template
+
+description: Wordpress Template
+
+create_dir:TRUE
+
+Make sure to add a line break after the new line. Because it is a text file, it won't be properly read. `create_dir` = TRUE is a comment to create a new directory folder each time the template is used. Fairly useful if you have subfolders.
+
+Then you will want to save the file in the `report` folder. *NOT THE SKELETON FOLDER* where it is defaulted. 
+
+#### Installation and testing
+This is where the script will come in handy for testing and retesting.
+
+`devtools::install("WordpressTemplate")` to install the package, make sure to load it.
+`library(WordpressTemplate)`
+
+Followed by a clickthrough  *File -> New File -> Rmarkdown -> FROM TEMPLATE*.Where the new file should be located. I want to mention that it is a pretty good idea to add descriptions to the `.yaml` file. 
+
+Good luck.
+
