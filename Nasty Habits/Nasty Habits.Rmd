@@ -1,0 +1,86 @@
+---
+author: "Ben Chu"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+---
+
+```{r include = FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
+
+library(RWordPress)
+library(knitr)
+
+options(WordpressLogin = c('chubenn' = 'FarsightedFlamingo1'),
+        WordpressURL = 'https://chubenn.blog/xmlrpc.php')
+
+knit2wp("Nasty Habits.Rmd", 
+        title = "Nasty Habits", 
+        action = c("newPost"), 
+        publish = FALSE)
+```
+
+I developed this nasty habit of drinking dark beers with ice. This was compounded by the fact that It was mixed it with some version of discernible coffee. It started  when I was meeting my friend for generic drinks. I ordered an ice coffee to start. Those days were hot, sinful- paralyzing. An accident of a fire had swallowed up both sides of the main highway out of this town. We were caged like unloved pet dogs, once the family favorite but over time left to exist in a small five by five enclosure in a fluorescent lit basement only twenty feet from freedom. Disappeared.
+
+The discussion starts with how much we both hate the town and how we must wait for the rain to fall to make our escape. When the locals praise God for washing away ashes just like like their own sins,  Tim and I would slip away under the guise of distraction.
+
+The barista doesn't interrupt us but she stops our conversation. "Hey, what do you want?"
+
+Tim looks down at the menu she slings in front of us "I don't know, I only started drinking in Japan."
+
+He was honest about this, the last time we went drinking he had some tea. It was night. He ordered a lie that shimmered in the amber glow of the bar. If it wasn't for the large pint glass, it would have fooled us. Fooled us for poison and convinced us that he also was unable to escape this. We would have sat there and stepped up to tell half stories and made plans for a future that was only ever one day away. That's the thing about stories and future plans, they're lies that tell truths. And the more they tell, the less you hear.
+
+"Get him some Belgium sour and I'll drink an ice coffee" I would decide for both of us.
+
+The young confused barista snaps "we don't do cold brew anymore."
+
+"well, do you have ice?"
+
+"yea"
+
+"just drip the coffee on to the ice." I really wasn't trying to be rude, though I feel impartial to people who simply follow orders. History justified too many tribulations by "I was told we can'ts." From iced coffees to actual inequalities.
+
+"that's going to water down the coffee though" she legitimately looks worried. Sickened at the idea that someone refuses to savor tastes.
+
+"It'll be fine, as long as it works like coffee"
+
+I look around, every which way. From the "Live, Love, Laugh" wooden displays to the "NOTORIOUS P.I.G" throw pillows. Establishments like these want you to believe that you are home, but this is the better version of it. Instead of pictures of family and achievements, they have forced nostalgia. Things that aren't wooden or gold are plastered with vapor-wave aesthetics crammed into mid-modern furnishings. The plants on top of the faux cabinets are real but they are the fool-proof drought/smoke/ignorance resistant types. Women take their girlfriends here to talk about the depraved porn their husbands are addicted to. Husbands wait for those women to leave to watch that porn. Simple.
+
+Our drinks appear in front of us but the barista requests to switch away from the counter-top and moves to cleaning in the back. It was smooth, like a hurricane being honest about its intentions ten days before it touches land. Like the sorrowful yells a drunk would cry out before crashing into the floor and sobbing into the lonesome night. Like the last words before a break-up.
+
+On the same parallel, the coffee is exactly what you would expect, no deception, no misguided directions into the bold flavors of Kenya. Honest.
+
+Tim sips and looks at me. "Hey, pretty good. I think I like sours. They don't have anything like this in Japan."
+
+"Yea? what do you mean, did you try the full range of drinks?" I respond.
+
+"Wellllll, they have lots of beers, but mostly like lagers and rice beers. Pretty refreshing but kinda boring. Then they have Sakes, Sochus, and Umeshus. While good, it's just a whole other direction. The emphasis is placed on being Japanese. You see, they pride themselves on being authentic and pure, kinda in a nationalistic way but without that crazy racism. It's like, how America is the supposed melting pot of the world. Yea well, other people don't care for that kind of sentiment. They like how different they look from other Asian people and will gladly ignore the fact that they obviously descended from modern day Korea. It's that sort of blind ignorance that they use when judging others."
+
+I like Tim. We don't hate people, we certainly aren't rude, we are just worn out from the repeated tests of time. "So did you enjoy your time there? I'm getting alot of resentment"
+
+"I mean, it's like if you go on vacation and people want you to enjoy it, you're gonna love it. You move their and find that people hate your guts and want you to go home, you hate them back. Though, I gotta tell you Daniel, I met my girlfriend there and that flips some of my hate." He takes a large sip of his sour and I mirror his actions.
+
+Somehow, I find myself near the quarter end of the coffee. I flag the second barista down "Hey, can I get a Sunday Coffee?"
+
+Of course, the pause and the accompanying stare. "What's a Sunday Coffee?"
+
+I motion my hand towards the taps and cup in front of me. "It's just half a coffee and half a beer. I dunno, most people use some stout or porter and just jam whatever is in the pot with it"
+
+"We don't have any porters or stouts on tap, but we do have a coffee beer in a glass, is that okay."
+
+Responses like these are exactly what I live for, a perfect blend of the mundane and the obvious. "Yuuup"
+
+The barista uncaps the bottle and places it in front of me. "Enjoy"
+
+I pick up the bottle and ask Tim if he wants half.
+
+He looks at me. "I've never had an coffee infused beer before, do they taste exactly like the describing words?"
+
+"Sure do buddy." I pour about half of the beer into my cup and make a ice/coffee/beer mix. The rest of the bottle is for Tim.
+
+He sips. "That's pretty good. You know, that's a very American thing you just did."
+
+"What, be rude to the barista?" I respond without looking.
+
+"Ha, but no. The mixing thing. It's like Americans don't care about what they drink. Like we are all disillusioned to the idea that something is supposed to be taken on it's own. We see that it's all just a combination of facts and truths and lies and deceits. Especially at parties, my European dorm-mates would always comment on how I would just pour some combination of liquor and mixer into my cup and go on. It was then I noticed that they would finish their drinks 100% and then make another cocktail that doesn't bleed over."
+
+American things, rebelliously criticizing without knowledge. American beliefs - disillusioned and unaware without need. The American people, awkward and short while tipping baristas somewhere between the bare minimum and an overwhelming amount. Our greatest contribution isn't innovation or music or military might, it's our our ability to roll over punishment to the future, without ceasing. Every business email and love letter finishes with "As always, take it as you will. Do as you please. "
