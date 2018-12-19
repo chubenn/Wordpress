@@ -1,0 +1,47 @@
+---
+author: "Ben Chu"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+---
+
+```{r include = FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
+
+library(RWordPress)
+library(knitr)
+
+options(WordpressLogin = c('chubenn' = 'FarsightedFlamingo1'),
+        WordpressURL = 'https://chubenn.blog/xmlrpc.php')
+
+knit2wp("A Poem for Gifts.Rmd", 
+        title = "On Gifts, A poem", 
+        action = c("newPost"), 
+        publish = FALSE)
+```
+**On Gifts**
+
+`
+
+My door echoed a notification
+
+Brought by a temporary worker
+
+`
+
+Holding a brown unassuming box
+
+Filled with your casual thoughts
+
+`
+
+Wishing me well
+
+Into the next year
+
+`
+
+Though I may never see you again
+
+I hope I wasn't an obligation
+
+`
