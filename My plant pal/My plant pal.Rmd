@@ -1,0 +1,26 @@
+---
+author: "Ben Chu"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+---
+
+```{r include = FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
+
+library(RWordPress)
+library(knitr)
+
+options(WordpressLogin = c('chubenn' = 'FarsightedFlamingo1'),
+        WordpressURL = 'https://chubenn.blog/xmlrpc.php')
+
+knit2wp("My plant pal.Rmd", 
+        title = "My plant pal", 
+        action = c("newPost"), 
+        publish = FALSE)
+```
+
+Quartz Monzonite dreams
+
+Created by Wasabi affadavits
+
+Maybe you shouldn't have rushed home
