@@ -1,0 +1,38 @@
+---
+author: "Ben Chu"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+---
+
+```{r include = FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
+
+library(RWordPress)
+library(knitr)
+
+options(WordpressLogin = c('chubenn' = 'FarsightedFlamingo1'),
+        WordpressURL = 'https://chubenn.blog/xmlrpc.php')
+
+knit2wp("The Articulate Boy Wonder.rmd", 
+        title = "The Articulate Boy Wonder", 
+        action = c("newPost"), 
+        publish = FALSE)
+```
+
+Banners unfurled by iridescent lights
+
+Scintillating powerful opaline brights
+
+A boy, looking down from a height
+
+Agaze at the audience before him
+
+Only waves of pointy heads, barely dim
+
+Thrusting high, pointing with the right limb
+
+"I AM THE ARTICULATE BOY WONDER
+
+LISTEN AS I BELLOW WITH THUNDER."
+
+Oh no, a squeaky pubescent blunder.
