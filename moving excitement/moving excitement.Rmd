@@ -1,0 +1,27 @@
+---
+author: "Ben Chu"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+---
+
+```{r include = FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
+
+library(RWordPress)
+library(knitr)
+
+options(WordpressLogin = c('chubenn' = 'FarsightedFlamingo1'),
+        WordpressURL = 'https://chubenn.blog/xmlrpc.php')
+
+knit2wp("moving excitement.Rmd", 
+        title = "moving excitement", 
+        action = c("newPost"), 
+        publish = FALSE)
+```
+
+It's the day before a brand new life, logically deciding what I love and what loves me back.
+Filled to the windows of my vehicle: "I need this" and "I want this."
+In the end, I just need anyone else. 
+
+Yukimo started her trip to the coast, thoughts ablazed for new stars and nothing old - "I'll be at the beach everday and my skin will tan." Her vehicle harmonized with the singing as they swam through the states, only stopping to revitalize and taking in something novel. Thoughts often turned to things that were trivial - "Oh shoot, I forgot my toothbrush, oh well. There are always toothbrushes for sale" or "I hope I find a place fast."
+

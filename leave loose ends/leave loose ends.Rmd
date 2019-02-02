@@ -1,0 +1,65 @@
+---
+author: "Ben Chu"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+---
+
+```{r include = FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
+
+library(RWordPress)
+library(knitr)
+
+options(WordpressLogin = c('chubenn' = 'FarsightedFlamingo1'),
+        WordpressURL = 'https://chubenn.blog/xmlrpc.php')
+
+knit2wp("leave loose ends.Rmd", 
+        title = "leave loose ends.", 
+        action = c("newPost"), 
+        publish = FALSE)
+```
+
+Several months ago, I had run into an old college acquaintance who did not recognize me. Nor did I recognize him, at first. There was the necessary double look, the two second stare, and then the immediate facial change - no doubt of familiarity. We approached each other, and held out hands that transformed into a warm, but short hug. The perfect explanation for a relationship turned not because of disagreement, rather due to the weathering of time. Incontestable. We began to chat in the middle of the paper towel section of a local Target but decided to get a coffee for a longer conversation. We met up at a coffee shop a half hour later. Decent coffee sure, but it was just a means.
+
+The first ten minutes were compiled mostly of stock questions, purchased from a website that deals primarily in obligations and predictable formats.
+
+"What have you been up to."
+
+"Where are you living now."
+
+It wasn't much longer that we both had enough to be completely caught up on the macro-scale details of each other's timelines. Though, he mentioned something that was particularly interesting, maybe as a forethought, but even then I was still fairly enraptured. It was a detail that was slipped into the list of events with no merit or second pass.
+
+"I visited Japan with my girlfriend."
+
+At the time, this travel log seemed no more than a short stay vacation - a romantic trip with nothing more than hand-holding in the daytime and hotel beds at night. He mentioned it in-between his studies and a recent car accident that I had no time to dig deeper into this foreign adventure. Both were particularly interesting. We went to a state school to study business, but I finished much quicker than he did. He must have extended his education with a break in between semesters because he was living quite far away. During one of those school commutes home, a delivery-truck had run a red light and crumpled his car into a wad - pressurized like frustrated paper with the failed attempts at writing the first draft of a novel compressed between hazardous angles and nonsensical geometry. Somehow, he was able to get out of the car - later doctors would note that nothing had scraped him, no traumatic shock, not even a torn muscle where the seat belt had harnessed him in. The truck driver was delivering a series of packages to the university but was running late and was rushing - he died immediately.
+
+Later on that evening, I would relax and think about my conversation with him, his demeanor, the coffee we drank, and even imagined what his life was like in Japan. The car accident seemed to have happened only a few months ago but we were both in college years ago. The timeline didn't seem to make sense because he might have had a girlfriend right now, but she certainly did not come up in conversation, save for a singular sentence, nor did his travels. This was only particularly strange because John had a tendency to stay locked in his house for several days to weeks to months. Both of these things seemed more out of the ordinary.
+
+
+Throughout the next months, I would send John Tanner emails, he would respond with short snippets about some thoughts on politics or social-economies or even just fringe conspiracies.
+
+"Sam, 
+There is a significant portion of the populace that rejects the current political arrangement we find modern civilization adhering to. This isn't new. It's as old as what we would consider modern civilization, probably older. Twelve thousand years minimum there have been the subjects and the powerful. Some would argue that this is natural. A manifestation of social hierarchy in the most, as of yet, advanced form we know. Maybe. I guess the most I can take from the modern iteration of the political system we currently find ourselves in is that we haven't grown as a species as much as we would like to think. The oppressed still compose the majority while the elites compose the few. A story as old as language. From chiefdoms to monarchs to democracy. It's all the same in a futile way. Did you know that there is a City of London within the borders of London that is seperate from what we commonly think of as London. There is a separate police force, separate mayor, an entire distinct government at the heart of the greater London area segregated by county line and all. It's known by the locals as The City, like some grand clandestine symbol cocooned in the chrysalis of Britain's capital. The crown on the head. Isn't that strange? 
+John. T"
+
+or
+
+"Sam,
+Been thinking a lot about culture. About how a collective latches onto myth and how the bigger the group the greater splintering of story there is. Something about the way the world's various forms of delineation are disintegrating through rapid technological advancement at a pace that incapacitates any and all ability of predictive foresight. The change is just too fast. I know you have heard about chem-trails, flat earthers, anti-vaccers, government conspiracies. We've been inoculated with those stories from childhood, from Watergate to MKUltra to Kubrik and his supposed involvement with the moon landing. It's in our DNA. And maybe there is a reason for that. Maybe those splinters mean something, or at least some of them. How could we tell if they do? What trick of the light reflecting off their numerous slivered edges reveals their authenticity or their falsity? By the very merit of an idea being discredited with the term "conspiracy theory", doesn't that warrant a speculative analysis? I'm not naive enough to think I know one way or the other, but there is something compelling about this thing I read about online that people call the "Mandala Effect". The short of it is that we, collectively, undergo a cultural bout of amnestic reorganization of factual events, and then accept the alteration of those facts without question, compelled by social psychology and hindsight bias. The extreme end of it is that individually, or as a species, we jump dimensions. I don't know if I buy that. But how would I know? How could I? Innumerably, limitations of our knowledge have been proven to us through the trials of history. Who can say that this moment, what we think we know, that story we have attached ourselves to, who can say that it isn't wrong one way or the other? Certainly I cannot. Anyways. It was good getting coffee with you. We will have to meet up again soon. Wishing you well, 
+
+John. T"
+
+These emails would continue in this fashion until one day, I received a phone call from him. I picked up the phone and engaged in airy dialogue until he moved into a monologue. 
+
+"John, how are you? What's going on?" I would start.
+
+
+John was immediately fired "I was going through some books, books of mine, I just wanted to share an interesting idea with you."
+
+"What's up?"
+
+
+"You know, One of the greatest inventions of civilization is the recipe book. Recipe books always start with a brief introduction, a list of materials or procurements, instructions that utilize all the aforementioned, and finally an end product. The first recipe known to current society was a recipe combining, wheat, water, and some ancient form of yeast - the end resulted in either bread or beer." 
+
+
+He quickly hung up after, saying a short sighted goodbye. Though, I would not find out til later that this would be our last conversation. An ending that leaves loose ends and a belief that things would continue on. 
