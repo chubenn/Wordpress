@@ -1,0 +1,37 @@
+---
+author: "Ben Chu"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+---
+
+```{r include = FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
+
+library(RWordPress)
+library(knitr)
+
+options(WordpressLogin = c('chubenn' = 'FarsightedFlamingo1'),
+        WordpressURL = 'https://chubenn.blog/xmlrpc.php')
+
+knit2wp("why we slouch.Rmd", 
+        title = "why we slouch", 
+        action = c("newPost"), 
+        publish = FALSE)
+```
+
+As it turns out, humans are incredibly lazy [^1], we do everything we can to do less. We are neither poetic nor interesting. I realized this after decrying that the last 29 years of my life I have been secretly hoping for a sweet but public death.
+
+Twenty days ago, a boy named Chandler had bought his first Nerf gun, it was orange with lines of blue, it shot balls instead of those darts [^2] and the first thing he thought of, upon receiving the gift, was to share it with his best friend - Ryan. These two played together, they ate lunch together[^3] but they never promised each other anything. It was apparent to both of them that, they were eventually going to move along in the future, still friends, just more and more distant as time goes on. 
+
+I wonder if these two boys would drunkenly betray each other, maybe over a girl [^4] or even maybe something as deceptive as time, creeping by with no swift cut, just a small burn that eventually spans the entire distance of a friendship's rope. It's a cliche to say that friendships never last, but what is even worse is being on your knees and looking for the answer [^5].
+
+The year is 2032, Chandler and Ryan haven't talked to each other in twelve years, but everytime they see the Nerf logo, they think of one another, the thought isn't strong enough to prompt a phone call or a text, but enough to instill a strong sense of nostalgia and fond memories[^6].
+
+***
+
+[^1]: I can't confirm this through any scientific or published means, I mostly just hate waking up in the morning.
+[^2]: balls roll, darts hide
+[^3]: They didn't give a shit what they ate as long as they shared their findings - PB&J's taste good, Frozen PH&J's taste better.
+[^4]: "YOU FUCKED HER EVEN THOUGH YOU KNOW I LIKED HER" or maybe something slightly less dramatic "hey man, I know you were drunk but, it really made me uncomfortable when you drove after the party, can we talk about it?" and over course the response "yea man, I'm sorry, I know you were worried. I guess I just wasn't thinking about it. Honestly, I've been having a hard time lately, thanks for bringing it up & I really appreciate it when you think ahead for me"
+[^5]: are we humans? or are we dancers?
+[^6]: Honestly, I love my friends, but sometimes it feels like I am a decade and an entire world away.
