@@ -1,0 +1,85 @@
+---
+author: "Ben Chu"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+---
+
+```{r include = FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
+
+library(RWordPress)
+library(knitr)
+
+options(WordpressLogin = c('chubenn' = 'FarsightedFlamingo1'),
+        WordpressURL = 'https://chubenn.blog/xmlrpc.php')
+
+knit2wp("Collecting Watches or.Rmd", 
+        title = "Collecting Watches or", 
+        action = c("newPost"), 
+        publish = FALSE)
+```
+
+Collecting watches as a hobby or how to reflect that nothing important has happened to your life.
+
+I own several watches now, various brands that seem to spark joy whenever I look at them [^1]. Everything from the G-Shock 6200 BB-JN to the Seiko 5 21-Jewel 7S26C that my father gave me [^2]. They each fulfill various functions that fulfill various needs [^3]. I find myself glancing and holding appreciation for each watch as I go throughout my day. Maybe it’s the reflection of the light at a sharp angle, sometimes it’s appreciating the masterwork that goes to imagining a timepiece that exhales masterclass of both function and design, though 90% of the time, it’s my own internal perception of how I am both viewing myself, and how others perceive that I am viewing myself. For the sake of this article [^4], I won’t go into details here between internal self-perception and external self-perception [^5]. I’ll simply say these two things.
+
+
+
+Internal self-perception is more commonly referred to as ego, the hubris of man, the inner voice that we discuss and believe we battle with. We pretend like the ego is on our side, making us invaluable. The greatest little move that the ego ever pulled was making you believe that it is you and it is protecting you. That it’s the ego’s game, it owns you, it controls you, it knows your moves before you know it. The ego is conniving and ever convincing you to change your behavior patterns to something that only serves it's own purposes[^6]. 
+
+
+External self-perception requires a little more effort and patience but provides value. (e.g., waiting for responses from others for release). The classic: recycling and taking pictures for social media, basically anytime anyone uses a pound sign/hashtag [^7].  Before uploading for the world to see.The basis for understanding how External self-perception works goes like this. Every time you have an external thought that begins like “I wonder if that guy/girl[^8] thinks that I have a positive/negative trait.”
+
+
+As an American, we are always told to “Live for yourself” or “Who gives a fuck what anyone thinks.” This is an incredibly toxic and frankly, knee-capping concept. Not only does “do whatever you want to do” exist only in a self-forward stage, but its power comes from the justification of terrible and hostile decisions. It’s easy to highlight villains of consumerism, it feels right to accuse them of shallow banality, however, it’s most likely that though they appear to be suffering, maybe they are closer to understanding the harmony between themselves and the universe in which they occupy [^9].
+
+
+Long ago, in the cruel dry desert, a king gifted his daughter a horse. She had desired a horse for many years, wishing, dreaming, and making a point to vocalize her wants. As the months went by the king had seen her daughter enjoy the horse and watched the relationship blossom into something great. The king observed these events and was pleased.  The king, realizing that the horse brought her happiness, decided to gift her another horse for her birthday. She had cared for the second horse, feeding and cleaning and enjoying her horses. The king observed this too and was pleased with his decision. As the years went by, the king had purchased a horse for his daughter annually for her birthday gift. He always asks his daughter “do you love these horses? I hope they bring you joy” She would always respond “Yes, I love them all, thank you so much father.” However, this was a beautiful lie, she was caught in another thought. “Why don’t these 10 horses bring me as much joy as the one horse? If one horse brought me happiness, shouldn’t 10 horses provide returns tenfold?”
+
+
+This is a fun fable because it always elicits two emotions, depending on what type of person you are. Category A, will interpret the story in a fairly common fashion, understanding that wealth and quantity cannot bring happiness. They equate materialism to corruption or some sort of negative emotion. “Capitalism has ruined our human spirit.” or “Greed is the complete feedback loop of why we cannot and will not ever fully achieve long lasting joy.” This Category A belief is perfectly fine, just like platitudes are. They present themselves in a way that is both acceptable [^10], but more importantly, look great in social media. It’s important to underline that, the fable is designed in this manner to elicit the simple “You can’t buy happiness” - however, something slightly more sinister exists for those Category B.
+
+
+The Category B response is much more rare because it’s a two part statement, and you might have found yourself primed for this statement. For us non-princesses and non-princes of the world, the suffering that we engage in isn’t from the discovery that more is less, rather that we can’t stop either moving forward or trying to learn. Feel free to disagree with me, but[^11]  we will never stop trying to figure it out[^12]. It’s not that we can’t achieve this level of pleasure, we reach it hundreds of thousands of times every day. However, it’s a temporary moment, short and fleeting. The second part is realizing that we have been incorrectly taught/deceived into believing that such permanence exists, which is a function of our own memories belief that something in hindsight is great/amazing/let’s-do-it-again[^13]. [INTERPOLATION - Last year (2019), my friend and I finished the Grinduro gravel cycling event. The established route was fairly large, larger than anything I had completed physically before, 65 miles of soul crushing gravel routes, 7k climbing. One day before the event, the weather had turned for the worse and a storm brewed in. Some of the trails had been blocked and the course had to be altered - to be longer and steeper in elevation. Not only that, snow and ice had rolled in at the high elevation. I noticed that at the aid stations, several people appeared to be displaying symptoms of early hypothermia. What I’m trying to say is, this was a terrible type 2 sort of race. [^14]] However, everytime I get together and discuss this event with others, it’s always great fun, a little bit of excitement, and definitely a promise for future outings. We are willing to alter memories in our own minds so they provide cognitive ease for both our behavior and our beliefs.
+
+
+Take for example, finding yourself on an airplane to a new place, headed towards the concept of something new. An adventure. A whole generation of people, myself included, looking for something to bring us lasting happiness? Joy? Satisying some lust we couldn't find at home, and doing that ten times. <u>Expecting a tenfold return when deep down inside, we know it lessens and lessens </u>, we know that repeating something only passes time faster and faster again [^15]. Until penultimately, that joy turns into obligation and sorrow.
+
+
+When I was younger, we backpacked the Lost Coast in Central California, the trip went marvelously. The sun light kissed us all the miles, the air was feint with a light breeze and the forest was dense with ocean spray. I fell in love with a woman while we hiked and talked, it was natural and completely expected as two basking in joy for life. This here is what the forced nostalgia from media and dreams coerced us to believe, that this would ultimately be the beginning of the rest of our lives and watching predesigned hope blossom into wonderfully great. Like the moments before the closing of the curtains promising that a happy ending actually exists.[Editor's note: this is the knockout punch of the entire memory of you backpacking with a long lost love of your youth, the entire point of the disillusionment that pervades the current moment, yet seems so vaporous in the glow of nostalgic memories. Define that "something" that is so great, that "something" that never would be, that "something" that time reveals to us is a pure and beautiful lie.]
+
+
+That was a long time ago and ten thousand planets away, each time I try to recreate the experience, my passion dims duller and flatter each time. [^16] I find myself staring at my watches, hoping they might bring me joy. Though I know, they will not. The next one, will not, and the one after will simply blur the lines. These things we attribute to joy - watches, horses, loved ones, and even adventures - all are simply a candle held against our lives. The true and greatest gift, is hidden behind a veil of failure. Not adventure, not materialism, and certainly not contentedness or even love's contendedness. The princess found her greatest joy in memory. The thing that is perpetually corrupting and holds only value to the self. As for me, the watch I wear the most, is a throwaway watch I found at goodwill. It barely holds accuracy of the time, there is no real function, and most importantly, I could lose it and even though it feels like I would miss it, I know I wouldn’t in the end.
+
+***
+
+[^1]:Marie Kondo, Author of ‘The Life Changing Magic of Tidying Up’ and Netflix wizard, suggests that maybe we should consider possessions that spark joy. This process, though practical, is more psychological due to it’s harmony between our internal worlds and external worlds.
+
+[^2]:Let me elaborate on this subculture, it’s a collectors game. We can all use our phones to tell the time, but rather the collection of rich history or controversial choices provides an opportunity for others to appreciate. E.g., art museums, streetwear, or even what you choose to post on instagram. It’s easy enough to vilify, but aren’t we all villains?
+
+[^3]:E.g., my Garmin Vivoactive 3-M tracks both heartrate and GPS locations. Which, I suppose isn’t necessary for anything else but running, but I do enjoy collecting/wrangling and analyzing the data. [[Subnote] The EU passed an international law in 2018 that necessitates that any company that collects and processes data for both internal (marketing) and external (marketing) purposes must provide the data to the consumer in a format that is both easily interpretable and understandable.] The Casio’s I wear can function fairly well for both my work and a casual drink during happy hour. Granted, I do work in a fairly generic office/cubicle/computer/analyst position which is only back-facing.
+[^4]:Published in the second issue of Snake Massage
+
+[^5]:The secondary effort occurs in resolving that unease via justification, ramifications, or otherwise. When those secondary efforts are accomplished, one should become cognitively agreeable again. Philosophers have related this to the more broad concept of ‘enlightenment’ the state where all paths agree with each other. Perfect harmony between a strand of hair and the dirt on the floor. Most people exist in the space of Internal self-perception because it provides immediate release and response. (E.g., weighing decisions and engaging in the those decisions soon afterwards). This can be most easily identified when you are living alone, engaging in the acts of life, aimless, directionless, and watching everyone pass on. This is pure Internal self-perception, it makes the everyday both reasonable and incredibly functional.  --- External Perceptions are just realizing from the other’s perspective. This social ego is equally as important, if you need it to be. Living in this space provides a greater satisfaction, albeit the relationship is closer to a hostage situation than a natural symbiosis
+
+[^6]:this concept, cognitive dissonance is a two part effort. The first identifies a cognitive object and a behavior - let’s say, the belief that recycling (cognitive object) is good for the planet and littering (behavior). A cognitively agreeable basis would be that “I do not litter, I recycle.” Safe. Simple. Easy. We could go our whole lives without violating this and never think of a secondary thought. However, in the event that a cognitively disagreeable basis occurs “I believe in recycling but I littered” - we tend to find internal conflict that leads to stress and pain. The secondary part, is the shift to address this pain, a cognitive one “I don’t believe in recycling anymore so I can litter” or a behavioral one “I’m just going to pick up the litter.”
+
+[^7]:Can we discuss the amazing shift that this # has erupted? My whole life, it was known to me as the pound sign, not entirely sure why or how, just a cultural name. However now, there are enough songs and references that have completely changed the name of a symbol.
+
+[^8]:You, the reader, probably just a normal human being
+
+[^9]:Our greatest invention was the belief that ‘we must persist’ or ‘hope never dies.’ Unfortunately, true joy exists only when we expunge these ideas away. When we remove all pursuits for happiness or joy, we can then begin to understand what is truly necessary - accepting the state of limbo. It’s this struggle that strikes fear into all humanity. 
+
+[^10]:Are we humans? Or do we just suffer? 
+
+[^11]:Again, for us normal folks
+
+[^12]:Love, Wealth, Happiness, Commute Time, Possessions, The Perfect Cup of Tea
+
+[^13]:regardless of whether you are aware of this or not. It’s just like how a placebo pill can work even if you are fully conscious and understanding that you just ingested a placebo
+
+[^14]:Outdoor recreationalists have designated three types of “Fun”; Type 1 - this is actual fun, biking along a river trail, hiking with your friend through a gentle misty forest, singing along to Margaritaville at the swim up bar. These are the pure funs that are fondly enjoyed before, during, and after the event. Type 2 - the brutal, muscle burning, miserable while it’s happening type. In the middle you WILL have said “I want to give up.” Though by the end the tone shifts into “well that was doable, what’s for next year?” Type 3 - is not fun, not before, during, or after.  
+
+[^15]:there is some soft data, that suggests that perceptions of time really does move faster. At least, the sensation of time, as observers of the linear timeline, we can only move forward. The best and most simple analogy is based on the concept of age, to a ten year old, a year is a whole tenth of the entirety of their complete and total life. 10%. That’s quite a bit. Imagine wasting a whole year to a ten year old, that would be decimating [This is the literal definition of decimation: lose 10% of something]. Compare this to someone who is 20 years old, a year? Not as much, 5% but still fairly sizeable; but now a 50 year older? A year might fly by, it’s fairly insignificant in the grandscale. It’s easy to understand how people might say that they will do things “next year.” Not because they are amorous pieces of trash, but because time is less significant as a concept.
+
+[^16]:Again, there is some data from memory experts that suggest that memory alteration occurs from repeated recall events. Consider your first memory, you might imagine something that has been piecemealed together from those who have repeated the story. You might not even truly “remember” it, but you understand that it is at least, a memory. What if I were to tell you that your memory wasn’t actually like that, that instead of you laying in a white room atop of a soft bed, it was actually nighttime and the lights were just on. These next iterative recall events [for you at least] will blend together and eventually corrupt into something that you must engage in to restore that cognitive dissonance.
