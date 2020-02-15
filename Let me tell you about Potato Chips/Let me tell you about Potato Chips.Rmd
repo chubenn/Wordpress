@@ -18,5 +18,3 @@ knit2wp("XXX.Rmd",
         action = c("newPost"), 
         publish = FALSE)
 ```
-
-hello
