@@ -1,0 +1,53 @@
+---
+author: "Ben Chu"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+---
+
+```{r include = FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
+
+library(RWordPress)
+library(knitr)
+
+options(WordpressLogin = c('chubenn' = 'FarsightedFlamingo1'),
+        WordpressURL = 'https://chubenn.blog/xmlrpc.php')
+
+knit2wp("the greys and the blacks.Rmd", 
+        title = "the greys and the blacks", 
+        action = c("newPost"), 
+        publish = FALSE)
+```
+
+when i was young
+
+i believed in all things
+
+hopeful spirits wishing
+
+for our fantasies to come true
+
+
+
+loving others and
+
+letting them know
+
+how to love me
+
+
+quartz monzonite fevers
+
+in the mangled desert
+
+hiding in my windowed cabin
+
+
+effervescent forests
+
+shouting under the guise of winter
+
+
+"nobody dreams of you"
+
+these words - remain corrected
